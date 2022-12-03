@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Devil Yogi</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('..\\images/projectbg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .items{
+        border: 2px solid black;
+        border-radius: 12px;
+        margin: 20px 20px;
+        width: 800px;
+        height: 250px;
+        background-color: rgba(63,78,131,0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        column-gap: 114px;
+    }
+    .items:hover{
+        box-shadow: 8px 8px 5px rgb(16, 84, 136);
+    }
+    .items img{
+        height: 200px;
+        width: 200px;
+    }
+    #title{
+        font-size: 30px;
+    }
+    #name{
+        height: 125px;
+    }
+    .cardContent{
+        height: 200px;
+        width: 300px;
+    }
+    .cardImg{
+        height: 200px;
+        width: 200px;
+    }
+</style>
+
+<body>
+    <!-- Creating navigation bar -->
+    <nav id="bar">
+        <div id="item1">
+            <a href="index.html">Home</a>
+        </div>
+        <div id="item2">
+            <a href="Certifications.html">Certifications</a>
+        </div>
+        <div id="item3">
+            <a href="index.html">
+                <img src="..\images\logo9.png" alt="Refresh" onmouseover="this.src='..\\images\\logo10.png'"
+                    onmouseout="this.src='..\\images\\logo9.png'" id="home-button">
+            </a>
+        </div>
+        <div id="item4">
+            <a href="Projects.html">Projects</a>
+        </div>
+        <div id="item5">
+            <a href="Contact_Me.html">Contact Me</a>
+        </div>
+    </nav>
+    
+    <!-- Displaying my name -->
+    <div id="name">
+        <p>Yogendra Bijapur</p>
+        <P id="title">Projects</P>
+    </div>
+
+    <!-- creating some cards link to display my projects  -->
+    <div id="cards">
+            <div id="card1" class="items">
+                <div class="cardImg">
+                    <img src="..\images/projecttest.jpg" alt="project1">
+                </div>
+                <div class="cardContent">
+                    <h3>Project Name:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi neque sit consectetur pariatur quam dolore vel ipsam tenetur. Similique modi incidunt odit nihil tempora hic dicta facilis quas dignissimos!</p>
+                    
+                </div>
+            </div>
+        <div id="card2" class="items">
+            <div class="cardImg">
+                <img src="..\images/projecttest.jpg" alt="project1">
+            </div>
+            <div class="cardContent">
+                <h3>Project Name:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi neque sit consectetur pariatur quam dolore vel ipsam tenetur. Similique modi incidunt odit nihil tempora hic dicta facilis quas dignissimos!</p>
+            
+            </div>
+        </div>
+        <div id="card3" class="items">
+            <div class="cardImg">
+                <img src="..\images/projecttest.jpg" alt="project1">
+            </div>
+            <div class="cardContent">
+                <h3>Project Name:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi neque sit consectetur pariatur quam dolore vel ipsam tenetur. Similique modi incidunt odit nihil tempora hic dicta facilis quas dignissimos!</p>
+            
+            </div>
+        </div>
+        <div id="card4" class="items">
+            <div class="cardImg">
+                <img src="..\images/projecttest.jpg" alt="project1">
+            </div>
+            <div class="cardContent">
+                <h3>Project Name:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi neque sit consectetur pariatur quam dolore vel ipsam tenetur. Similique modi incidunt odit nihil tempora hic dicta facilis quas dignissimos!</p>
+            
+            </div>
+        </div>
+        <div id="card5" class="items">
+            <div class="cardImg">
+                <img src="..\images/projecttest.jpg" alt="project1">
+            </div>
+            <div class="cardContent">
+                <h3>Project Name:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi neque sit consectetur pariatur quam dolore vel ipsam tenetur. Similique modi incidunt odit nihil tempora hic dicta facilis quas dignissimos!</p>
+            
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var item = document.getElementById("home-button");
+        var music = new Audio('..\\audio\\Once Upon A Time - Vikram 128 Kbps (1).mp3');
+
+        item.addEventListener("mouseover", playMusic, false);
+        item.addEventListener("mouseout", pauseMusic, false);
+
+        function playMusic() {
+            music.play();
+        }
+
+        function pauseMusic() {
+            music.pause();
+            music.currentTime = 0;
+        }
+    </script>
+</body>
+
+</html>

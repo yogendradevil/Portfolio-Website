@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Devil Yogi</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-image: url('..\\images/projectbg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: 2px solid black;
+        border-radius: 12px;
+        margin: 20px 20px;
+        width: 350px;
+        height: 375px;
+        background-color: rgba(63, 78, 131, 0.6);
+        row-gap: 20px;
+    }
+
+    .items img {
+        height: 200px;
+        width: 200px;
+        padding-top: 10px;
+    }
+
+    #title {
+        font-size: 30px;
+    }
+
+    #name {
+        height: 125px;
+    }
+
+    .cardImg {
+        height: 200px;
+        width: 200px;
+    }
+
+    h4 {
+        text-align: center;
+        text-decoration-line: underline;
+    }
+
+    .items:hover {
+        box-shadow: 8px 8px 5px rgb(16, 84, 136);
+    }
+</style>
+
+<body>
+    <!-- Creating navigation bar -->
+    <nav id="bar">
+        <div id="item1">
+            <a href="index.html">Home</a>
+        </div>
+        <div id="item2">
+            <a href="Certifications.html">Certifications</a>
+        </div>
+        <div id="item3">
+            <a href="index.html">
+                <img src="..\images\logo9.png" alt="Refresh" onmouseover="this.src='..\\images\\logo10.png'"
+                    onmouseout="this.src='..\\images\\logo9.png'" id="home-button">
+            </a>
+        </div>
+        <div id="item4">
+            <a href="Projects.html">Projects</a>
+        </div>
+        <div id="item5">
+            <a href="Contact_Me.html">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- Displaying my name -->
+    <div id="name">
+        <p>Yogendra Bijapur</p>
+        <P id="title">Certifications</P>
+    </div>
+
+    <!-- creating some cards link to display my projects  -->
+    <div id="cards">
+        <a href="#">
+            <div id="card1" class="items">
+                <div class="cardImg">
+                    <img src="..\images/ceh.jpg" alt="project1">
+                </div>
+                <div class="cardContent">
+                    <h4>Certified Ethical Hacker</h4>
+
+                </div>
+            </div>
+        </a>
+        <a href="https://www.udemy.com/certificate/UC-7970df67-925d-4aad-99f4-6baf5d4660ac/">
+            <div id="card2" class="items">
+                <div class="cardImg">
+                    <img src="..\images/bug.jpg" alt="project1">
+                </div>
+                <div class="cardContent">
+                    <h4>Penetration Testing & Bug Bounty Hunting</h4>
+
+                </div>
+            </div>
+        </a>
+        <a href="https://www.udemy.com/certificate/UC-bab11c26-205e-4403-a3f2-db385a78d490/">
+            <div id="card3" class="items">
+                <div class="cardImg">
+                    <img src="..\images/bug2.png" alt="project1">
+                </div>
+                <div class="cardContent">
+                    <h4>Ethical Hacking/Penetration Testing & Bug Bounty Hunting v2</h4>
+
+                </div>
+            </div>
+        </a>
+        <a href="https://vityarthi.com/?cert_hash=98c60eaa3bf3b9e3">
+            <div id="card4" class="items">
+                <div class="cardImg">
+                    <img src="..\images/Ethical-Hacking.png" alt="project1">
+                </div>
+                <div class="cardContent">
+                    <h4>Introduction to Ethical Hacking</h4>
+
+                </div>
+            </div>
+        </a>
+        <a href="https://onestop-prod.s3.ap-south-1.amazonaws.com/student_internship_certificates/33/Yogendra_Mar_2022_internship_20013.pdf">
+            <div id="card5" class="items">
+                <div class="cardImg">
+                    <img src="..\images/onestop.png" alt="project1">
+                </div>
+                <div class="cardContent">
+                    <h4>Cyber Security Internship</h4>
+
+                </div>
+            </div>
+    </div>
+    </a>
+
+    <script>
+        var item = document.getElementById("home-button");
+        var music = new Audio('..\\audio\\Once Upon A Time - Vikram 128 Kbps (1).mp3');
+
+        item.addEventListener("mouseover", playMusic, false);
+        item.addEventListener("mouseout", pauseMusic, false);
+
+        function playMusic() {
+            music.play();
+        }
+
+        function pauseMusic() {
+            music.pause();
+            music.currentTime = 0;
+        }
+    </script>
+</body>
+
+</html>
