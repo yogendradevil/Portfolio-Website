@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Clickjack Tool</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #head {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        text-align: center;
+        color: white;
+        align-items: center;
+        height: 10rem;
+    }
+
+    h2 {
+        margin: 25px;
+    }
+
+    form {
+        display: flex;
+    }
+
+    #url {
+        margin-right: 10px;
+        height: 38px;
+        width: 405px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: rgb(222, 219, 219);
+        
+    }
+
+    #btn {
+        height: 41px;
+        width: 107px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: rgb(222, 219, 219);
+        font-size: 18px;
+    }
+    #frame{
+        background-color: dimgray;
+        height: 500px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+</style>
+
+<body>
+    <div id="head">
+        <h2>Clickjack Vulnerability Identification Tool</h2>
+        <form action="#" onsubmit="return vali()" id="get" name="input">
+            <input type="text" id="url" name="link" placeholder=" paste your url here">
+            <input type="submit" id="btn" value="Check"  >
+        </form>
+    </div>
+    <div id="frame">
+        <!-- <iframe id="i" src="" name="iframe_a" ></iframe> -->
+        <iframe id="gfgFrame" src="" 
+        style="height: 95%; width: 90%;"></iframe>
+    </div>
+    <script>
+        function vali() {
+        let url= document.input.link.value;
+        console.log(url);
+        //let res= '<iframe src="'+url+'"></iframe>';
+        //console.log(res);
+        document.getElementById("gfgFrame").src = url;
+        }
+    </script>
+    
+</body>
+
+</html>

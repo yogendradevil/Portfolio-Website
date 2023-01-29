@@ -9,11 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
     * {
         margin: 0;
         padding: 0;
     }
-    #cards{
+
+    #cards {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -23,39 +27,69 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .items{
+
+    .items {
         border: 2px solid black;
         border-radius: 12px;
         margin: 20px 20px;
         width: 800px;
         height: 250px;
-        background-color: rgba(63,78,131,0.6);
+        background-color: rgba(63, 78, 131, 0.6);
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
-        column-gap: 114px;
+        column-gap: 100px;
     }
-    .items:hover{
+
+    .items:hover {
         box-shadow: 8px 8px 5px rgb(16, 84, 136);
+        cursor: pointer;
     }
-    .items img{
+
+    .items img {
         height: 200px;
-        width: 200px;
+        width: 350px;
     }
-    #title{
+
+    #title {
         font-size: 30px;
     }
-    #name{
-        height: 125px;
+
+
+    .cardContent {
+        height: 200px;
+        width: 310px;
     }
-    .cardContent{
+
+    .cardImg {
         height: 200px;
         width: 300px;
     }
-    .cardImg{
+
+    #cards h3 {
+        text-decoration-line: underline;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    #cards p {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    #card2 img {
         height: 200px;
-        width: 200px;
+        width: 100px;
+        margin-left: 127px;
+    }
+    #item4 a{
+        color: rgb(135, 69, 241);
+    }
+    footer{
+        padding-bottom: 0px;
+        text-align: center;
+        color: white;
+        background-color: rgb(59, 58, 58);
+        height: 30px;
     }
 </style>
 
@@ -81,84 +115,98 @@
             <a href="Contact_Me.html">Contact Me</a>
         </div>
     </nav>
-    
+
     <!-- Displaying my name -->
-    <div id="name">
+    <!-- <div id="name">
         <p>Yogendra Bijapur</p>
         <P id="title">Projects</P>
-    </div>
+    </div> -->
 
     <!-- creating some cards link to display my projects  -->
     <div id="cards">
+        <a href="index.html">
             <div id="card1" class="items">
                 <div class="cardImg">
-                    <img src="..\images/projecttest.jpg" alt="project1">
+                    <img src="..\images/site.png" alt="project1">
                 </div>
                 <div class="cardContent">
-                    <h3>Project Name:</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi neque sit consectetur pariatur quam dolore vel ipsam tenetur. Similique modi incidunt odit nihil tempora hic dicta facilis quas dignissimos!</p>
-                    
+                    <h3>Portfolio Website:</h3><br>
+                    <p>-A dedicated website of mine (Yogendra Bijapur) to showcase my skills.</p>
+                    <p>-This Website contains all collections of my projects, certifications, Qualifications, and my
+                        Contact information.</p>
+                    <p>-Indivisual project</p>
+                    <p>-Techonlogy: HTML, CSS, JS, NodeJS</p>
                 </div>
             </div>
-        <div id="card2" class="items">
-            <div class="cardImg">
-                <img src="..\images/projecttest.jpg" alt="project1">
+        </a>
+        <a
+            href="https://github.com/yogendradevil/PHISHING-WEBSITE-DETECTOR-APP-USING-ANDROID-STUDIO-ADRESS-BAR-BASED-FEATURES-">
+            <div id="card2" class="items">
+                <div class="cardImg">
+                    <img src="..\images/p1.png" alt="project1">
+                </div>
+                <div class="cardContent">
+                    <h3>Phishing URL Detector APP:</h3><br>
+                    <p> -Description: Detects Phishing URL, This Tool helps users to know whether a URL is safe or not.
+                        This app works on a URL format basis</p>
+                    <p> -Team Project: 4 members</p>
+                    <p> -Role: Lead and App developer</p>
+                    <p> -Technology: Android Studio, JAVA, XML</p>
+
+                </div>
             </div>
-            <div class="cardContent">
-                <h3>Project Name:</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi neque sit consectetur pariatur quam dolore vel ipsam tenetur. Similique modi incidunt odit nihil tempora hic dicta facilis quas dignissimos!</p>
-            
+        </a>
+        <a href="https://github.com/yogendradevil/Malicious-URL-Detector-Using-API-">
+            <div id="card3" class="items">
+                <div class="cardImg">
+                    <img src="..\images/api.png" alt="project1">
+                </div>
+                <div class="cardContent">
+                    <h3>Malicious URL Detector Using API:</h3><br>
+                    <p>-Description: Detects Phishing and Malicious URL with the help of API.</p>
+                    <p>-Team Project: 4 members</p>
+                    <p>-Role: Lead</p>
+                    <p>-Technology: HTML, CSS, JS, API</p>
+                </div>
             </div>
-        </div>
-        <div id="card3" class="items">
-            <div class="cardImg">
-                <img src="..\images/projecttest.jpg" alt="project1">
+        </a>
+        <a href="clickJack.html">
+            <div id="card4" class="items">
+                <div class="cardImg">
+                    <img src="..\images/click.png" alt="project1">
+                </div>
+                <div class="cardContent">
+                    <h3>Clickjack Vulnerability Identification Tool:</h3><br>
+                    <p>-It help users to check whether the entered URL is vulnerable to Clickjack Vulnerability or not.
+                    </p>
+                    <p>-Indivisual project</p>
+                    <p>-Techonlogys used: HTML, CSS</p>
+
+                </div>
             </div>
-            <div class="cardContent">
-                <h3>Project Name:</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi neque sit consectetur pariatur quam dolore vel ipsam tenetur. Similique modi incidunt odit nihil tempora hic dicta facilis quas dignissimos!</p>
-            
+        </a>
+        <a
+            href="https://onestop-prod.s3.ap-south-1.amazonaws.com/student_project_certificates/33/Yogendra_Feb_2022_project_completion_20013.pdf">
+            <div id="card5" class="items">
+                <div class="cardImg">
+                    <img src="..\images/kali.png" alt="project1">
+                </div>
+                <div class="cardContent">
+                    <h3>Cyber Security Project:</h3><br>
+                    <p>A Cyber Security internship with 3 mini projects,</p>
+                    <p>-Authentication Bypass</p>
+                    <p>-Scanning using OWASP ZAP</p>
+                    <p>-Scanning Open ports and bypassing them</p>
+                    <p>-Indivisual project</p>
+                    <p>-Techonlogys used: Kali Linux, Msfconsole, NMAP, Wire-Shark</p>
+                </div>
             </div>
-        </div>
-        <div id="card4" class="items">
-            <div class="cardImg">
-                <img src="..\images/projecttest.jpg" alt="project1">
-            </div>
-            <div class="cardContent">
-                <h3>Project Name:</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi neque sit consectetur pariatur quam dolore vel ipsam tenetur. Similique modi incidunt odit nihil tempora hic dicta facilis quas dignissimos!</p>
-            
-            </div>
-        </div>
-        <div id="card5" class="items">
-            <div class="cardImg">
-                <img src="..\images/projecttest.jpg" alt="project1">
-            </div>
-            <div class="cardContent">
-                <h3>Project Name:</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi neque sit consectetur pariatur quam dolore vel ipsam tenetur. Similique modi incidunt odit nihil tempora hic dicta facilis quas dignissimos!</p>
-            
-            </div>
-        </div>
+        </a>
     </div>
-
-
-    <script>
-        var item = document.getElementById("home-button");
-        var music = new Audio('..\\audio\\Once Upon A Time - Vikram 128 Kbps (1).mp3');
-
-        item.addEventListener("mouseover", playMusic, false);
-        item.addEventListener("mouseout", pauseMusic, false);
-
-        function playMusic() {
-            music.play();
-        }
-
-        function pauseMusic() {
-            music.pause();
-            music.currentTime = 0;
-        }
-    </script>
 </body>
+<footer>
+    <p>Made with ❤ by Yogendra Bijapur</p>
+</footer>
+<script src="audio.js"></script>
 
 </html>

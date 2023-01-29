@@ -9,11 +9,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
     * {
         margin: 0;
         padding: 0;
     }
-
+    #mybio{
+        width: 400px;
+        padding-top: 210px;
+        padding-left: 220px;
+    }
+    h4{
+        color: orangered;
+    }      
+    #title{
+        font-size: 30px;
+    }
+    .welcome{
+        color: white;
+        font-size: 3rem;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 27.7rem;
+    }
+    .welcome span{
+        color: orange;
+    }
+    #do{
+        font-size: 2rem;
+        margin-top: 15px;
+    }
+    #do span{
+        color: rgb(134, 57, 221);
+    }
+    #rpart img{
+        height: 400px;
+    }
+    .bt {
+        background-color: rgb(106, 15, 225);
+        border: 2px solid black;
+        color: white;
+        border-radius: 20px;
+        padding: 10px 15px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    footer{
+        padding-bottom: 0px;
+        text-align: center;
+        color: white;
+        background-color: rgb(59, 58, 58);
+        height: 30px;
+    }
+    #fill{
+        background-color: black;
+    }
 </style>
 
 <body>
@@ -38,25 +93,30 @@
             <a href="Contact_Me.html">Contact Me</a>
         </div>
     </nav>
-    <div id="name">
+    <!-- <div id="name">
         <p>Yogendra Bijapur</p>
-    </div>
-    <script>
-        var item = document.getElementById("home-button");
-        var music = new Audio('..\\audio\\Once Upon A Time - Vikram 128 Kbps (1).mp3');
+        <p id="title">Penetration Tester | Web Developer</p>
+    </div> -->
+    <div id="fill">
 
-        item.addEventListener("mouseover", playMusic, false);
-        item.addEventListener("mouseout", pauseMusic, false);
-
-        function playMusic() {
-            music.play();
-        }
-
-        function pauseMusic() {
-            music.pause();
-            music.currentTime = 0;
-        }
-    </script>
+        <section class="welcome">
+            <div id="lpart">
+                <p>Hi There,</p>
+                <p>I'm Yogendra <span>Bijapur</span></p>
+                <p id="do">I Am into <span>Penetration Testing | Web Development</span></p>
+                <button class="bt"
+            onclick="window.location.href = 'https://drive.google.com/file/d/1HJRKSoy4eQOUage2u4xbNZL60If5QU31/view?usp=share_link';">
+            Resume</button>
+        </div>
+        <div id="rpart">
+            <img src="..\images\display1.gif" alt="">
+        </div>
+    </section>
+</div>
 </body>
+<footer>
+    <p>Made with ❤ by Yogendra Bijapur</p>
+</footer>
+<script src="audio.js"></script>
 
 </html>

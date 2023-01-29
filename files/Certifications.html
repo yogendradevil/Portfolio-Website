@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
     * {
         margin: 0;
         padding: 0;
@@ -19,7 +21,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-image: url('..\\images/projectbg.jpg');
+        background-image: url('..\\images/certibg.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -38,7 +40,7 @@
         margin: 20px 20px;
         width: 350px;
         height: 375px;
-        background-color: rgba(63, 78, 131, 0.6);
+        background-color: rgb(60 57 121 / 60%);;
         row-gap: 20px;
     }
 
@@ -52,9 +54,6 @@
         font-size: 30px;
     }
 
-    #name {
-        height: 125px;
-    }
 
     .cardImg {
         height: 200px;
@@ -64,10 +63,21 @@
     h4 {
         text-align: center;
         text-decoration-line: underline;
+        font-family: 'Josefin Sans', sans-serif;
     }
 
     .items:hover {
-        box-shadow: 8px 8px 5px rgb(16, 84, 136);
+        box-shadow: 8px 8px 5px rgb(113 1 159);
+    }
+    #item2 a{
+        color: rgb(135, 69, 241);
+    }
+    footer{
+        padding-bottom: 0px;
+        text-align: center;
+        color: white;
+        background-color: rgb(59, 58, 58);
+        height: 30px;
     }
 </style>
 
@@ -95,10 +105,10 @@
     </nav>
 
     <!-- Displaying my name -->
-    <div id="name">
+    <!-- <div id="name">
         <p>Yogendra Bijapur</p>
         <P id="title">Certifications</P>
-    </div>
+    </div> -->
 
     <!-- creating some cards link to display my projects  -->
     <div id="cards">
@@ -146,7 +156,19 @@
                 </div>
             </div>
         </a>
-        <a href="https://onestop-prod.s3.ap-south-1.amazonaws.com/student_internship_certificates/33/Yogendra_Mar_2022_internship_20013.pdf">
+        <a href="https://drive.google.com/file/d/1Ms502CzfNtxflUSM3WGuSLMPh9FMrNuH/view?usp=share_link">
+            <div id="card6" class="items">
+                <div class="cardImg">
+                    <img src="..\images/cisco.png" alt="project1">
+                </div>
+                <div class="cardContent">
+                    <h4>Cybersecurity Essentials </h4>
+
+                </div>
+            </div>
+        </a>
+        <a
+            href="https://onestop-prod.s3.ap-south-1.amazonaws.com/student_internship_certificates/33/Yogendra_Mar_2022_internship_20013.pdf">
             <div id="card5" class="items">
                 <div class="cardImg">
                     <img src="..\images/onestop.png" alt="project1">
@@ -158,23 +180,10 @@
             </div>
     </div>
     </a>
-
-    <script>
-        var item = document.getElementById("home-button");
-        var music = new Audio('..\\audio\\Once Upon A Time - Vikram 128 Kbps (1).mp3');
-
-        item.addEventListener("mouseover", playMusic, false);
-        item.addEventListener("mouseout", pauseMusic, false);
-
-        function playMusic() {
-            music.play();
-        }
-
-        function pauseMusic() {
-            music.pause();
-            music.currentTime = 0;
-        }
-    </script>
 </body>
+<footer>
+    <p>Made with ❤ by Yogendra Bijapur</p>
+</footer>
+<script src="audio.js"></script>
 
 </html>

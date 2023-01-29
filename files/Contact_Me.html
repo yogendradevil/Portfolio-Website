@@ -14,6 +14,53 @@
         padding: 0;
     }
 
+    body {
+        background-color: black;
+    }
+
+    #contact {
+        color: white;
+    }
+
+    #name {
+        height: 100px;
+    }
+
+    #item5 a {
+        color: rgb(135, 69, 241);
+    }
+    #contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    #contact img {
+        margin: 10px;
+        width: 80px;
+        filter: invert(100%);
+        cursor: pointer;
+    }
+    #leet img{
+        height: 100px;
+    }
+    .leet {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    #leet img{
+        cursor: pointer;
+    }
+    footer{
+        text-align: center;
+        color: white;
+        background-color: rgb(59, 58, 58);
+        height: 43px;
+    }
 </style>
 
 <body>
@@ -41,22 +88,21 @@
     <div id="name">
         <p>Yogendra Bijapur</p>
     </div>
-    <script>
-        var item = document.getElementById("home-button");
-        var music = new Audio('..\\audio\\Once Upon A Time - Vikram 128 Kbps (1).mp3');
+        <div id="contact">
+            <a href="https://www.linkedin.com/in/YogendraBijapur/"><img src="../images/linkedin1.png" alt=""></a>
+            <a href="https://github.com/yogendradevil"><img src="../images/git.png" alt=""></a>
+            <a href="https://twitter.com/yogendrabijapur?t=iINsTrMb_Qx0x7yPO69DXQ&s=08"><img src="../images/twitter1.png"
+                alt=""></a>
+                <a href="https://www.instagram.com/yogendra_bijapur/"><img src="../images/instagram1.png" alt=""></a>
+            </div>
+            <div class="leet">
+                <a id="leet" href="https://leetcode.com/DevilYogi/"><img src="../images/leet.png" alt=""></a>
+            </div>
 
-        item.addEventListener("mouseover", playMusic, false);
-        item.addEventListener("mouseout", pauseMusic, false);
-
-        function playMusic() {
-            music.play();
-        }
-
-        function pauseMusic() {
-            music.pause();
-            music.currentTime = 0;
-        }
-    </script>
-</body>
-
+    </body>
+    <footer>
+        <p>Made with ❤ by Yogendra Bijapur</p>
+        <p>Email: yogendrabijapur2002@gmail.com</p>
+    </footer>
+    <script src="audio.js"></script>
 </html>
